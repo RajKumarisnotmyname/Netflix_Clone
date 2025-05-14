@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: heading;
+    src: url(./fonts/NetflixSans-Bold.otf); 
+    /* ./NetflixSans-Bold.otf */
+}
+@font-face {
+    font-family: regular;
+    src: url(./fonts/NetflixSans-Regular.otf);
+    /* ./NetflixSans-Regular.otf */
+}
+@font-face {
+    font-family: Sans;
+    src: url(./fonts/NetflixSans-Regular.otf);
+    /* ./NetflixSans-Regular.otf */
+}
+@font-face {
+    font-family: regulars;
+    src: url(./fonts/NetflixSans-Regular.woff2);
+    /* ./NetflixSans-Regular.woff2 */
+}
+body {
+    height: 100vh;
+    object-fit: cover;
+}
+.nav {
+    display: flex;
+}
+.back-img img {
+    object-fit: cover;
+    position: relative;
+    height: 117.8vh;
+    width: 100%;
+    filter: opacity(40%);
+    filter: brightness(20%);
+    object-fit: center; 
+    z-index: -1;
+    position: relative;
+}
+.netflix-title-div {
+    position: absolute;
+    margin-top: -669.5px;
+    width: 148.2px;
+    margin-left: 147.8px;
+}
+.netflix-title {
+    color: red;
+    fill: red;
+    margin-top: 40px;
+}    
+.english {
+    margin-top: 30px;
+}
+.nav-end {
+    margin-top: -666px;
+    margin-left: 899px;
+    position: relative;
+}
+.nav-end svg {
+    fill: white;
+    color: white;
+    position: absolute;
+    top: 8px;
+    left: 13px;
+}
+.chinese {
+    margin-top: 28px;
+}
+select[name]{
+    padding-left: 31px;
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+    padding-right: 17px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.648);
+    color: white;
+    border-radius: 5px;
+    font-weight: 530;
+}
+
+.nav-end button {
+    background-color: red;
+    color: white;
+    padding: 8.4px 17px;
+    border-radius: 5px;
+    border-style: none;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.sign-btn {
+    margin-left: 126px;
+    margin-top: -31px;
+}
+.home-page {
+    margin-top: -510px;
+    margin-left: -768px;
+}
+.home-page h1{
+    color: white;
+    font-size: 3.5rem;
+    font-family: heading;
+    font-weight: 900;
+}
+.heading-2 {
+    margin-left: 70px;
+}
+.head-para {
+    margin-top: -352px;
+    margin-left: -439px;
+}
+.head-para p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    font-family: heading;
+}
+.bottom {
+    margin-top: -294px;
+    margin-left: -420px;
+}
+.bottom p {
+    color: white;
+    font-family: regular;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.start-btn {
+    margin-top: -257px;
+    margin-left: -552px;
+    position: relative;
+}
+.start-btn input {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem  0.9rem;
+    padding-top: 1.1rem;
+    padding-bottom: 0.8rem;
+    width: 370px;
+    border-radius: 5px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 1px solid grey;
+}
+.start-btn button {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 0.65rem;
+    padding-bottom: 0.70rem;
+    padding-right: 2.5rem;
+    padding-left: 0rem;
+    width: 210px;
+    border-radius: 0.25rem;
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    border: 1px solid grey;
+    margin-left: 4px;
+    border-style: none;
+}
+.e1ax5wel0 {
+    position: absolute;
+}
+.e1ax5wel0 svg{
+    position: absolute;
+    fill: white;
+    color: white;
+    top: -40px;
+    left: 540px;
+}
+.curve-line {
+    width: 100%;
+    height: 100px;
+    margin-top: -100px;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border: solid .25rem transparent;
+    background-color: black;
+    border-bottom: none;
+    height: 50px;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+.curve-line h2 {
+    margin-top: 60px;
+    margin-left: 140px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: regular;
+}
+.container-2 {
+    background-color: black;
+    position: relative;
+}
+.movie-cards{
+    display: flex;  
+    margin-left: 170px;
+    gap: 45px;
+    overflow-y: visible;
+    overflow-x: scroll;
+    width: 910px;
+    scrollbar-width: none;
+}
+.movie-cards img {
+    border-radius: 0.5rem;
+    width: 180px;
+    height: 250px;
+    margin-top: 18px;
+    list-style: none; 
+}
+.default-ltr-cache-1j6jwcf {
+    line-height: 1;
+    display: inline-block;
+    height: 1em;
+    position: relative;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.10rem rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-size: 6.25rem;
+    font-family: heading;
+}
+.first {
+    display: flex;
+    margin-left: -720px;
+}
+.first .first-one {
+    margin-top: 90px;
+    top: 70px;
+    left: 710px;
+}
+.first .second-one {
+    margin-top: 90px;
+    top: 70px;
+    left: 855px;
+}
+.first .third-one {
+    margin-top: 90px;
+    top: 70px;
+    left: 1020px;
+}
+.first .fourth-one {
+    margin-top: 90px;
+    top: 70px;
+    left: 1185px;
+}
+.first .fifth-one {
+    margin-top: 90px;
+    top: 70px;
+    left: 1340px;
+}
+.first .sixth-one {
+    margin-top: 90px;
+    top: 70px;
+    left: 1500px;
+}
+.first .seventh-one {
+    margin-top: 90px;
+    top: 70px;
+    left: 1670px;
+}
+.first .eighth-one {
+    margin-top: 90px;
+    top: 70px;
+    left: 1835px;
+}
+.first .nine-one {
+    margin-top: 90px;
+    top: 70px;
+    left: 1990px;
+}
+.first .tenth-one {
+    margin-top: 90px;
+    top: 70px;
+    left: 2150px;
+}
+.Digital-devices-info {
+    background-color: black;
+    color: white;
+    margin-top: 90px;
+    margin-left: 147px;
+}
+.Digital-devices-info h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: regular;
+    margin-top: -20px;
+}
+.device-details h3 {
+    font-family: regular;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding: 25px 15px;
+}
+.device-details {
+    width: 229px;
+    height: 329px;
+    background: linear-gradient(rgb(29, 29, 81),rgb(34, 35, 43));
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.device-details p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: regular;
+    margin-top: -10px;
+    padding-left: 15px;
+}
+.device-details svg {
+    margin-top: 90px;
+    margin-left: 145px;
+}
+
+
+
+.Digital-devices-info2 {
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+    margin-left: 15px;
+}
+.Digital-devices-info2 h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: regular;
+    margin-top: -20px;
+}
+.device-details2 h3 {
+    font-family: regular;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding: 25px 15px;
+}
+.device-details2 {
+    width: 229px;
+    height: 329px;
+    background: linear-gradient(rgb(29, 29, 81),rgb(34, 35, 43));
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.device-details2 p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: regular;
+    margin-top: -10px;
+    padding-left: 15px;
+}
+.device-details2 svg {
+    margin-top: 90px;
+    margin-left: 145px;
+}
+
+
+
+.Digital-devices-info3 {
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+    margin-left: 15px;
+}
+.Digital-devices-info3 h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: regular;
+    margin-top: -20px;
+}
+.device-details3 h3 {
+    font-family: regular;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding: 25px 15px;
+}
+.device-details3 {
+    width: 229px;
+    height: 329px;
+    background: linear-gradient(rgb(29, 29, 81),rgb(34, 35, 43));
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.device-details3 p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: regular;
+    margin-top: -10px;
+    padding-left: 15px;
+}
+.device-details3 svg {
+    margin-top: 90px;
+    margin-left: 145px;
+}
+
+
+.Digital-devices-info4 {
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+    margin-left: 15px;
+}
+.Digital-devices-info4 h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: regular;
+    margin-top: -20px;
+}
+.device-details4 h3 {
+    font-family: regular;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding: 25px 15px;
+}
+.device-details4 {
+    width: 229px;
+    height: 329px;
+    background: linear-gradient(rgb(29, 29, 81),rgb(34, 35, 43));
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.device-details4 p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: regular;
+    margin-top: -10px;
+    padding-left: 15px;
+}
+.device-details4 svg {
+    margin-top: 90px;
+    margin-left: 145px;
+}
+.devices-container {
+    display: flex;
+    gap: 0px;
+}
+.Questions-container {
+    width: 967px;
+    height: 1192px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -135px;
+    
+}
+.first-btn {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+.first-btn button{
+    width: 967px;
+    height: 80px;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    font-family: regular;
+    font-size: 1.5rem;
+    border-style: none;
+}
+.first-btn p {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+.par p {
+    margin-top: 70px;
+}
+.first-btn svg {
+    position: absolute;
+    right: 20px;
+    color: white;
+    fill: white;
+}
+.freq {
+    font-family: regular;
+    font-size: 1.5rem;
+    margin-left: 150px;
+    margin-bottom: 150px;
+}
+
+.start-btn2 button {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 0.65rem;
+    padding-bottom: 0.70rem;
+    padding-right: 2.5rem;
+    padding-left: 0rem;
+    width: 210px;
+    border-radius: 0.25rem;
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    border: 1px solid grey;
+    border-style: none;
+    position: absolute;
+    margin-left: 8px;
+    
+}
+.start-btn2 {
+    margin-top: 115px;
+    margin-left: 92px;
+}
+.start-btn2 input {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem  0.9rem;
+    padding-top: 1.1rem;
+    padding-bottom: 0.8rem;
+    width: 565px;
+    border-radius: 5px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 1px solid grey;
+}
+.start-btn2 input:focus::placeholder {
+    transform: translateY(-20px);
+}
+.bottom-start-btn {
+    position: relative;  
+}
+.bottom2 p {
+    color: white;
+    font-family: regular;
+    font-size: 1rem;
+    font-weight: 400;
+    position: absolute;
+    left: 23%;
+    top: -40px;
+}
+.start-btn2 svg {
+    margin-left: 190px;
+}
+.last-para p{
+    color: rgba(255, 255, 255, 0.717);
+    margin-top: 70px;
+    font-family: regular;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 190px;
+    margin-top: 40px;
+}
+ul li {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+    font-family: regular;
+    font-size: 0.85rem;
+    text-decoration: underline;
+    margin-bottom: -30px;
+}
+.second-row {
+    display: flex;
+    gap: 110px;
+}
+.second-row-item3 {
+    margin-left: 120px;
+}
+.second-row-item4 {
+    margin-left: 40px;
+}
+.third-row-item3 {
+    margin-left: -27px;
+}
+.third-row-item4 {
+    margin-left: -63px;
+}
+.fourth-row-item2 {
+    margin-left: -43px;
+}
+.fourth-row-item3{
+    margin-left: -10px;
+}
+.second-row li {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+    font-family: regular;
+    font-size: 0.85rem;
+    text-decoration: underline;
+    margin-bottom: -25px;
+}
+.third-row {
+    display: flex;
+    gap: 170px;
+}
+.third-row li {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+    font-family: regular;
+    font-size: 0.85rem;
+    text-decoration: underline;
+    margin-bottom: -25px;
+}
+.bottom-dropdown {
+    margin-top: 730px;
+    margin-left: -900px;
+}
+.bottom-para {
+    margin-top: 40px;
+    color: rgba(255, 255, 255, 0.669);
+    font-family: regular;
+    font-size: 14px;
+}
